@@ -1,0 +1,58 @@
+.modal-container {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  animation: fade-bg 0.5s ease forwards;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  background: #fefefe;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #555;
+  width: 400px;
+  border: none;
+  margin-top: 30vh;
+  max-width: 80vw;
+  max-height: 80vh;
+  animation: slide-up 0.5s ease forwards;
+}
+
+.fade-out {
+  animation: fade-out 0.5s ease forwards;
+}
+
+@keyframes fade-bg {
+  0% {
+    background: rgba(0, 0, 0, 0);
+  }
+  100% {
+    background: rgba(0, 0, 0, 0.6);
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translate(0, 35px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}

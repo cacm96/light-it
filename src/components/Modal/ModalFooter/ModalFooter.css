@@ -1,0 +1,14 @@
+.modal-footer {
+  display: flex;
+  padding-top: 12px;
+  justify-content: flex-end;
+  align-items: center;
+  border-top: 1px solid #eee;
+  gap: 20px;
+}
+
+.outline {
+  background: none;
+  color: #222;
+  border: 1px solid #222;
+}

@@ -1,0 +1,25 @@
+.modal-header {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #eee;
+  color: #202020;
+  justify-content: flex-start;
+}
+
+.modal-title {
+  margin: 0 0 5px;
+  text-align: left;
+  color: #222;
+}
+
+.modal-description {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #666;
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+.modal-description:first-letter {
+  text-transform: capitalize;
+}
